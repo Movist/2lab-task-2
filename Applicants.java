@@ -6,7 +6,7 @@ import java.util.*;
 
 public class Applicants extends Applicant {
 
-    private Map<String, Map<String, Integer>> applicantsList = new HashMap<>();
+    public static Map<String, Map<String, Integer>> applicantsList = new HashMap<>();
 
     public Applicants(Path pathOfApplicants) {//USE HASH MAP
         super();
@@ -21,11 +21,12 @@ public class Applicants extends Applicant {
         }
     }
 
-    public Applicants() {
-
+    public Applicants(String applicantData) {
+        Applicant applicant = new Applicant(applicantData);
+        applicantsList.put(applicant.getName(), applicant.getDisciplinesAndScores());
     }
 
-    protected Map<String, Map<String, Integer>> getApplicantsList() {
+    protected static Map<String, Map<String, Integer>> getApplicantsList() {
         return applicantsList;
     }
 

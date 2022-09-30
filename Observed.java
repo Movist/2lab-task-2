@@ -1,10 +1,7 @@
 public interface Observed {
-    public void addApplicants(String applicant);
+    public void addApplicant(String applicant);
 
-    public void removeApplicants(String applicant);
-    public void addFaculty(String faculty);
-    public void removeFaculty(String faculty);
-
+    public void removeApplicant(String applicant);
 
     public void notifyObservers();
 }

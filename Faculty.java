@@ -1,9 +1,6 @@
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Faculty implements Observed {
-    //прошедшие абитуриенты на специальность
     private String facultyName;
     private String firstDiscipline;
     private String secondDiscipline;
@@ -30,28 +27,15 @@ public class Faculty implements Observed {
 
     }
 
-
     @Override
-    public void addApplicants(String applicant) {
+    public void addApplicant(String applicant) {
 
     }
 
     @Override
-    public void removeApplicants(String applicant) {
+    public void removeApplicant(String applicant) {
 
     }
-
-    @Override
-    public void addFaculty(String faculty) {
-
-    }
-
-
-    @Override
-    public void removeFaculty(String faculty) {
-
-    }
-
 
     @Override
     public void notifyObservers() {
